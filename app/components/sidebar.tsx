@@ -170,6 +170,15 @@ export function SideBar(props: { className?: string }) {
           onClick={() => showToast(Locale.WIP)}
           shadow
         />
+        <IconButton
+          icon={<PluginIcon />}
+          text={shouldNarrow ? undefined : "获取API Key"}
+          className={styles["sidebar-bar-button"]}
+          onClick={() =>
+            window.open("https://ouhayou.top/category/chatgpt/", "_blank")
+          }
+          shadow
+        />
       </div>
 
       <div
@@ -201,7 +210,11 @@ export function SideBar(props: { className?: string }) {
             </Link>
           </div>
           <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://ouhayou.top/category/chatgpt/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IconButton icon={<GithubIcon />} shadow />
             </a>
           </div>
