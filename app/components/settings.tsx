@@ -891,14 +891,14 @@ export function Settings() {
                 title={Locale.Settings.Endpoint.Title}
                 subTitle={Locale.Settings.Endpoint.SubTitle}
               >
-                <input
+                {/* <input
                   type="text"
                   value={accessStore.openaiUrl}
                   placeholder="https://api.openai.com/"
                   onChange={(e) =>
                     accessStore.updateOpenAiUrl(e.currentTarget.value)
                   }
-                ></input>
+                ></input> */}
               </ListItem>
               <ListItem
                 title={Locale.Settings.Token.Title}
